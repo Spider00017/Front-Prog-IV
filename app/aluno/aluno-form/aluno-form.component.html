@@ -1,0 +1,16 @@
+<h3>Formulário de Aluno</h3>
+<form #formUsuario="ngForm">
+  <label>Item:</label>
+  <input matInput
+  [(ngModel)]="aluno.primeiroNome" name="primeiroNome"><br/>
+  <label>Nome do solicitante:</label>
+  <input matInput
+  [(ngModel)]="aluno.sobreNome" name="sobreNome"><br/>
+  <label>CPF:</label>
+  <input matInput
+  [(ngModel)]="aluno.email" name="email"><br/>
+  <label>Número para contato:</label>
+  <input matInput
+  [(ngModel)]="aluno.idade" name="idade"><br/>
+  <input type="submit" title="Salvar" (click)="salvar(aluno)">
+</form>
